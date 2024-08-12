@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 5px;
+}
+
+.header_logo {
+    font-size: 4em;
+    color: white;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding: 2px;
+}
+
+.header_menu {
+    display: flex;
+    column-gap: 15px;
+    padding: 5px;
+}
+
+.header_menu_link {
+    font-size: 2.2em;
+    color: white;
+    opacity: 0.7;
+    transition: all 0.6s;
+}
+
+.header_menu_link:hover,
+.header_menu_link:focus {
+    opacity: 1;
+}
