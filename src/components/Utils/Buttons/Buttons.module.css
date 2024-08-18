@@ -1,0 +1,25 @@
+.button {
+    font-size: 1.4em;
+    border-radius: 4px;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.6s all;
+}
+
+.button_submit {
+    background-color: green;
+    color: white;
+}
+
+.button_reset {
+    background-color: red;
+    color: white;
+}
+.button:hover,
+.button:focus {
+    opacity: 1;
+}

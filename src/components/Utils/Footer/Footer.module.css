@@ -1,0 +1,26 @@
+.footer {
+    background: linear-gradient(rgb(99, 99, 99), black);
+    color: white;
+    border-top:1px solid rgb(117, 115, 115);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    gap: 30px;
+    min-height: 30vh;
+}
+.footer_title{
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+.footer_menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+}
+.footer_menu_item_link{
+    font-size: 1.5em;
+    color:blue;
+}

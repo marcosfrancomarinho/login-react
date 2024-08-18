@@ -1,0 +1,7 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 70vh;
+    background:linear-gradient(black,  rgb(99, 99, 99));
+}

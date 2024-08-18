@@ -1,5 +1,5 @@
 {
-  "name": "gerenciador",
+  "name": "Login",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +42,8 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.3.3"
+    "@types/dotenv": "^8.2.0",
+    "@types/react-router-dom": "^5.3.3",
+    "dotenv": "^16.4.5"
   }
 }

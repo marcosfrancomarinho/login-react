@@ -1,17 +1,28 @@
-import { BrowserRouter } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
-import Button from "./components/utils/Button/Button";
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Prime from './components/Prime/Prime';
+import Authorization from './components/Authorization/Authorization';
+import Initial from './components/Authorization/Main/pages/Initial/Initial';
+import Login from './components/Authorization/Main/pages/Login/Login';
+import Register from './components/Authorization/Main/pages/Register/Register';
+import Home from './components/Prime/Main/Pages/Home/Home';
 
-export default function App(): JSX.Element {
+
+const App: React.FC = () => {
     return (
-        <>
-            <BrowserRouter>
-                <Header />
-                <Main />
-                <Footer />
-            </BrowserRouter>
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Authorization />} >
+                    <Route path='/' element={<Initial />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/register' element={<Register />} />
+                </Route>
+                <Route path='/prime' element={<Prime />} >
+                    <Route path='/prime' element={<Home />} />
+                </Route>
+            </Routes>
+        </BrowserRouter >
     )
 }
+export default App;
+

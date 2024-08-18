@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_title {
+    color: white;
+    font-size: 5em;
+}

@@ -1,0 +1,139 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.register_title {
+    font-size: 2.5em;
+    color: white;
+    padding: 10px 0;
+}
+
+.register_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 600px;
+    border-radius: 3px;
+}
+
+.register_form_container_name,
+.register_form_container_email,
+.register_form_container_password {
+    display: flex;
+    flex-direction: column;
+}
+
+.register_form_input_name,
+.register_form_input_email,
+.register_form_input_password {
+    padding: 10px;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid rgb(214, 211, 211);
+}
+
+.register_form_input_name:focus,
+.register_form_input_email:focus,
+.register_form_input_password:focus {
+    background-color: rgb(249, 249, 249);
+    border-color: rgb(0, 0, 0);
+}
+
+.register_form_label_name,
+.register_form_label_password,
+.register_form_label_email {
+    color: white;
+    font-size: 1.5em
+}
+
+.register_form_btn_group {
+    display: flex;
+    gap: 5px;
+}
+
+.register_alert {
+    width: 600px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.register_alert_danger {
+    background-color: red;
+    animation-name: vibration;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+}
+
+.register_alert_success {
+    background-color: green;
+}
+
+.register_alert_message {
+    font-size: 1.3em;
+    color: white;
+    text-transform: lowercase;
+    padding: 5px;
+}
+
+.register_alert_btn_close {
+    position: absolute;
+    top: -3px;
+    right: 3px;
+    font-size: 1.6em;
+    padding-inline: 0;
+    padding-block: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: black;
+    transition: 0.5s all;
+}
+
+.register_alert_btn_close:hover {
+    color: white
+}
+
+@media screen and (max-width:630px) {
+    .register {
+        padding: 0;
+    }
+
+    .register_form {
+        width: 100%;
+    }
+
+    .register_alert {
+        width: 100%;
+    }
+}
+
+@keyframes vibration {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
